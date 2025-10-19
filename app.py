@@ -280,6 +280,8 @@ if folder_path:
                 "When you're ready, press **'Start Pre-Meditation EEG Recording'** button below to begin."
             )
 
+        if st.session_state["baseline_mode"] == "Comfort":
+            st.caption("Turn on volume to hear the brown noise")
         # --- Step 3: Record EEG (only if stream started) ---
         record_ph = st.empty()
 
@@ -1158,7 +1160,7 @@ if folder_path:
                             render_post_recording_disabled()
 
                             # Start the actual recording process
-                            with st.spinner(f"{post_duration} minutes EEG recording will start upon seeing dot.."):
+                            with st.spinner(f"{int(post_duration/60)} minutes EEG recording will start upon seeing dot.."):
                                 time.sleep(5)
 
                             overlay = show_fixation_overlay()
