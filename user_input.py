@@ -16,7 +16,7 @@ import streamlit as st
 import os
 import streamlit as st
 
-def get_user_folder(base_dir="C:/Users/slex8/OneDrive - Nanyang Technological University/UNI/FYP/data"):
+def get_user_folder(base_dir="./data"):
     # Placeholder to show/hide the input row
     name_ui = st.empty()
 

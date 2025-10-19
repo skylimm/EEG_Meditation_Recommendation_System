@@ -24,7 +24,14 @@ venv/
 # Ignore full raw EEG data folders
 data/
 data_collection/
+# Ignore everything in the outputs folder
+outputs/*
 
+# But allow these specific files
+!outputs/all_pre_files_rel.csv
+!outputs/cohort_baseline.csv
+!outputs/cohort_baseline.json
+!outputs/per_subject_baseline.csv
 
 
 # --- Common EEG and large data file types ---
@@ -32,7 +39,6 @@ data_collection/
 *.bdf
 *.mat
 *.pkl
-*.json
 *.h5
 *.hdf5
 *.ckpt
@@ -43,27 +49,3 @@ data_collection/
 
 
 
-# --- Reports & generated outputs ---
-*.pdf
-*.docx
-*.pptx
-reports/
-results/
-figures/
-plots/
-
-# --- Jupyter / IDE / OS generated files ---
-.ipynb_checkpoints/
-.vscode/
-.idea/
-*.iml
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# --- Temporary / Local files ---
-*.bak
-*.swp
-*.swo
-*.tmp
-*.log
