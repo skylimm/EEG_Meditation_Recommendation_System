@@ -1,0 +1,20 @@
+# Core EEG streaming
+muselsl==2.3.1
+pylsl==1.16.2
+
+# Data processing and analysis
+numpy==1.22.2
+pandas==2.0.3
+scipy==1.10.1
+matplotlib==3.7.5
+
+# Web app interface
+streamlit==1.40.1
+
+# Optional (for JSON, file handling, etc.)
+watchdog==4.0.2
+
+# Audio playback or sound effects (if used)
+pygame==2.6.1
+
+
