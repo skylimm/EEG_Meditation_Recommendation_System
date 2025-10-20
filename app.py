@@ -939,7 +939,7 @@ if folder_path:
             if "meditation_elapsed" not in st.session_state:
                 st.session_state.meditation_elapsed = 0
             if "meditation_total" not in st.session_state:
-                st.session_state.meditation_total = 1 * 60  # 15 minutes
+                st.session_state.meditation_total = 15 * 60  # 15 minutes
             if "audio_played" not in st.session_state:  # NEW: Track audio play state
                 st.session_state.audio_played = False
 
